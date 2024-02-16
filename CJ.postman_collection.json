@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "a2a3a73c-9634-4ba4-9e93-37bd599a0a3b",
+		"name": "CJ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28410186"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "ObtenerTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/cj/post/"
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/cj/post/7808536fe8ed439480dd50f7fa6cbcac"
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarPorTitulo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/cj/post/title/CJ King or God Of War"
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarPorId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8000/cj/post/eliminar/9ef575c0cee949cfafc73ba92fa3fd1b"
+					},
+					"response": []
+				},
+				{
+					"name": "AptualizarPost",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/cj/post/actualizar/7808536fe8ed439480dd50f7fa6cbcac"
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"summary\": \"Aqui va el resumen\",\r\n    \"description\": \"aqui va la descripcion\",\r\n    \"title\": \"UJuas Ujuas\",\r\n    \"content\": \"Informacion del contenido\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/cj/post/crear"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "ObtenerTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/cj/user/"
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/cj/user/c3720840a7ba4530ac7a8203773f2ef5"
+					},
+					"response": []
+				},
+				{
+					"name": "BuscarPorUserName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/cj/user/userName/aquivaelusername"
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarPorId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8000/cj/user/eliminar/"
+					},
+					"response": []
+				},
+				{
+					"name": "AptualizarUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lastName\": \"IAqui va un Apellido\",\r\n    \"password\": \"aquivalacontrasenna\",\r\n    \"access\": \"user\",\r\n    \"name\": \"Daniel\",\r\n    \"id\": \"c3720840a7ba4530ac7a8203773f2ef5\",\r\n    \"email\": \"Aquivaelimail@gmail.com\",\r\n    \"username\": \"aquivaelusername\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/cj/user/actualizar/c3720840a7ba4530ac7a8203773f2ef5"
+					},
+					"response": []
+				},
+				{
+					"name": "Crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lastName\": \"IAqui va un Apellido\",\r\n    \"password\": \"aquivalacontrasenna\",\r\n    \"access\": \"author\",\r\n    \"name\": \"Soy Autor cv\",\r\n    \"email\": \"Aquivaelimail@gmail.com\",\r\n    \"username\": \"aquivaelusername\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/cj/user/crear"
+					},
+					"response": []
+				},
+				{
+					"name": "CrearRelacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"summary\": \"Aqui va el resumen\",\r\n        \"description\": \"aqui va la descripcion\",\r\n        \"id\": \"9ef575c0cee949cfafc73ba92fa3fd1b\",\r\n        \"publishedDate\": \"2024-02-13\",\r\n        \"title\": \"XD\",\r\n        \"content\": \"Informacion del contenido\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/cj/user/de7ddf7693c849c5b136d37ecd0073b9/post"
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerPostDeUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8000/cj/user/de7ddf7693c849c5b136d37ecd0073b9/posts"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
